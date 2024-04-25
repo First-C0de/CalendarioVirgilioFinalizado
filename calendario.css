@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  height: auto;
+  
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  background-color: #fa5354;
+}
+
+h2 {
+  font-size: 32px;
+    padding-top: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.conteudo, .calendario header {
+  position: relative;
+}
+.calendario{
+    padding-bottom: 5%;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  
+}
+
+thead {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+td {
+  background-color: white;
+  border: 1px solid #cbd1d2;
+  height: 72px;
+  text-align: center;
+  width: 100px;
+}
+
+#dias {
+  cursor: pointer;
+}
+
+.calendario tbody td:hover {
+  background-color: aqua;
+}
+
+
+.modal {
+    z-index: 1;
+    padding: 25px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 3px;
+    width: 350px;
+    height: 125px;
+    top: 200px;
+    position: absolute;
+    font-family: sans-serif;
+    display: block;
+
+}
+
+
+
+.modal2 {
+  display: block ;
+  z-index: 1;
+  padding: 25px;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 3px;
+  width: 350px;
+  height: 125px;
+  top: 200px;
+
+  position: absolute;
+  font-family: Roboto, 'sans-serif';
+}
+
+.modal2 textarea {
+  width: 100%;
+  height: 60%;
+  cursor: text;
+  outline: 0;
+
+}
+
+.modal2 button {
+  font-family: Roboto, 'sans-serif';
+  margin-top: 1.5%;
+  width: 15%;
+  cursor: pointer;
+}
+
+.texto2 {
+    margin-bottom: 10px;
+    cursor: default;
+    text-align: center;
+}
+.botoes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 3s ease-in-out;
+}
+button:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.texto {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+}
+
+textarea {
+  resize: none ;
+}
+
+.mes-posterior {
+  color: rgba(15, 15, 15, 0.5)
+}
+
+.mes-anterior {
+  color: rgba(15, 15, 15, 0.5)
+}
+@media screen and (max-width: 720px) {
+  /* Estilos a serem aplicados quando a largura da tela for até 720 pixels */
+  /* Por exemplo: */
+  body {
+    font-size: 14px;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fa5354;
+  }
+  
+td {
+  background-color: white;
+  border: 1px solid #cbd1d2;
+  height: 50px;
+  width: auto;
+  margin: 5%;
+  text-align: center;
+  width: 100px;
+}
+
+.modal {
+  z-index: 1;
+  padding: 25px;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 3px;
+  width: 200px;
+  height: 100px;
+  top: 200px;
+  position: absolute;
+  font-family: sans-serif;
+  display: block;
+
+}
+}
